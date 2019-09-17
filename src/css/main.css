@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   color: #101010;
   line-height: 1.6;
@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", serif;
+  font-family: "Karla", sans-serif;
   line-height: 1.2;
 }
 
@@ -43,16 +43,13 @@ ul {
 }
 
 .button, .nav__menu-button {
+  font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   border: none;
   cursor: pointer;
 }
 .button:focus, .nav__menu-button:focus {
   outline: none;
-}
-
-.nav__menu-button {
-  font-size: 1.6rem;
 }
 
 .container {
@@ -82,6 +79,23 @@ ul {
 }
 .nav__item:not(:last-child) {
   margin-right: 1rem;
+}
+
+.about {
+  margin-bottom: 6rem;
+}
+
+.skills {
+  margin-bottom: 6rem;
+}
+.skills__header {
+  margin-bottom: 2rem;
+}
+.skills__list {
+  font-size: 2.4rem;
+}
+.bio__header {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

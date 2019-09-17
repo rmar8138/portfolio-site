@@ -1,0 +1,26 @@
+.about {
+  margin-bottom: 6rem;
+}
+
+.skills {
+  margin-bottom: 6rem;
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    font-size: $mobile-medium;
+  }
+
+  &__item {
+  }
+}
+
+.bio {
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+  }
+}

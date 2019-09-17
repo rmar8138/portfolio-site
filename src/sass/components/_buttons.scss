@@ -1,4 +1,5 @@
 .button {
+  font-size: $mobile-small;
   font-family: $secondary-font;
   border: none;
   cursor: pointer;
@@ -10,6 +11,4 @@
 
 .nav__menu-button {
   @extend .button;
-
-  font-size: 1.6rem;
 }
