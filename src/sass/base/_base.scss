@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: $secondary-font;
   color: $black;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 h1,
@@ -25,10 +25,11 @@ h4,
 h5,
 h6 {
   font-family: $primary-font;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 6rem;
 }
 
 a {

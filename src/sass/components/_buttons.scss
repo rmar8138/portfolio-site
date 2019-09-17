@@ -1,0 +1,9 @@
+.button {
+  font-family: $secondary-font;
+}
+
+.nav__menu-button {
+  @extend .button;
+
+  font-size: 1.6rem;
+}

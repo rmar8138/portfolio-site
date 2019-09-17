@@ -1,0 +1,19 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__navlist {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
