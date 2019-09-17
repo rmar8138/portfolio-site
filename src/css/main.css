@@ -50,6 +50,7 @@ ul {
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   border: none;
+  background-color: inherit;
   cursor: pointer;
 }
 .button:focus, .nav__menu-button:focus {
@@ -105,6 +106,7 @@ ul {
 
 .projects {
   text-align: center;
+  margin-bottom: 6rem;
 }
 .projects__header {
   margin-bottom: 4rem;
@@ -114,8 +116,11 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
-.projects__item > * {
+.projects__item > :not(:last-child) {
   margin-bottom: 2rem;
+}
+.projects__item__title {
+  font-weight: 300;
 }
 .projects__item__image {
   width: 100%;
@@ -128,6 +133,45 @@ ul {
   width: 1px;
   background-color: #d1d1d1;
   height: 6rem;
+}
+.projects__page-link {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #101010;
+}
+
+.footer {
+  background-color: #101010;
+  color: #ffffff;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer__logo {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.contact h5 {
+  font-weight: 300;
+  color: #777;
+}
+.contact a {
+  color: #ffffff;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social__icon {
+  background-color: #ffffff;
+  filter: invert(100%);
+}
+
+.copyright {
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
