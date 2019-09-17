@@ -145,7 +145,7 @@ ul {
   z-index: 2;
 }
 .nav__navlist {
-  display: flex;
+  display: none;
 }
 .nav__item:not(:last-child) {
   margin-right: 1rem;
@@ -209,6 +209,10 @@ ul {
 .projects__page-link {
   padding-bottom: 5px;
   border-bottom: 1px solid #101010;
+}
+
+.project-page__main {
+  margin-top: 10rem;
 }
 
 /*# sourceMappingURL=main.css.map */
