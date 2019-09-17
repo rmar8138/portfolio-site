@@ -1,0 +1,65 @@
+// ABOUT SECTION //
+
+.about {
+  margin-bottom: 6rem;
+}
+
+.skills {
+  margin-bottom: 6rem;
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    font-size: $mobile-medium;
+  }
+}
+
+.bio {
+  &__header {
+    margin-bottom: 2rem;
+  }
+}
+
+// PROJECTS SECTION //
+
+.projects {
+  text-align: center;
+  margin-bottom: 6rem;
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &__title {
+      font-weight: 300;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &::after {
+      z-index: 0;
+      margin: 4rem auto;
+      display: block;
+      content: '';
+      width: 1px;
+      background-color: $light-grey;
+      height: 6rem;
+    }
+  }
+
+  &__page-link {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $black;
+  }
+}

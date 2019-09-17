@@ -1,15 +1,20 @@
 .button {
+  color: $black;
+  font-size: $mobile-small;
   font-family: $secondary-font;
   border: none;
+  background-color: inherit;
   cursor: pointer;
 
   &:focus {
     outline: none;
   }
+
+  &:active {
+    background-color: none;
+  }
 }
 
 .nav__menu-button {
   @extend .button;
-
-  font-size: 1.6rem;
 }

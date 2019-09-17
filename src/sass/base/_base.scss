@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: $mobile-small;
   font-family: $secondary-font;
   color: $black;
   line-height: 1.6;
@@ -24,12 +24,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   line-height: 1.2;
 }
 
 h1 {
   font-size: 6rem;
+}
+
+h3 {
+  margin-bottom: 2rem;
 }
 
 a {
