@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ragan Martinez | Web Developer</title>
-    <script src="https://kit.fontawesome.com/62e4276893.js"></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav id="nav" class="nav">
         <span class="nav__logo">Ragan Martinez</span>
-        <button class="button nav__menu-button">Menu</button>
+        <button id="menuButton" class="button nav__menu-button">Menu</button>
         <!-- <ul class="nav__navlist">
             <li class="nav__item">Home</li>
             <li class="nav__item">Projects</li>
@@ -26,6 +25,23 @@
           <h2>Web Developer,</h2>
           <h2>Sydney Australia</h2>
         </div>
+      </div>
+      <div id="menu" class="menu">
+        <h3>Menu</h3>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li class="menu__item">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </header>
     <section class="about">
@@ -100,7 +116,7 @@
         <a class="projects__page-link" href="/projects">More projects</a>
       </div>
     </section>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <h4 class="footer__logo">RM</h4>
       <div class="contact">
         <h5>Email</h5>
@@ -134,5 +150,6 @@
       </ul>
       <span class="copyright">Copyright &copy; 2019</span>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
