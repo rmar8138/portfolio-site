@@ -1,5 +1,11 @@
 .button {
   font-family: $secondary-font;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .nav__menu-button {

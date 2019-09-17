@@ -44,6 +44,11 @@ ul {
 
 .button, .nav__menu-button {
   font-family: "Karla", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+.button:focus, .nav__menu-button:focus {
+  outline: none;
 }
 
 .nav__menu-button {
@@ -67,9 +72,10 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  padding: 2rem;
 }
 .nav__navlist {
   display: flex;
