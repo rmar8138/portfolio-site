@@ -33,6 +33,10 @@ h1 {
   font-size: 6rem;
 }
 
+h3 {
+  margin-bottom: 2rem;
+}
+
 a {
   text-decoration: none;
   color: #101010;
@@ -94,8 +98,36 @@ ul {
 .skills__list {
   font-size: 2.4rem;
 }
+
 .bio__header {
   margin-bottom: 2rem;
+}
+
+.projects {
+  text-align: center;
+}
+.projects__header {
+  margin-bottom: 4rem;
+}
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects__item > * {
+  margin-bottom: 2rem;
+}
+.projects__item__image {
+  width: 100%;
+}
+.projects__item::after {
+  z-index: 0;
+  margin: 4rem auto;
+  display: block;
+  content: "";
+  width: 1px;
+  background-color: #d1d1d1;
+  height: 6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

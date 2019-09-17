@@ -1,3 +1,5 @@
+// ABOUT SECTION //
+
 .about {
   margin-bottom: 6rem;
 }
@@ -11,16 +13,50 @@
   &__list {
     font-size: $mobile-medium;
   }
-
-  &__item {
-  }
 }
 
 .bio {
   &__header {
     margin-bottom: 2rem;
   }
+}
 
-  &__text {
+// PROJECTS SECTION //
+
+.projects {
+  text-align: center;
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+
+    // & > :not(:last-child) {
+    //   margin-bottom: 2rem;
+    // }
+
+    &__image {
+      width: 100%;
+    }
+
+    &::after {
+      z-index: 0;
+      margin: 4rem auto;
+      display: block;
+      content: '';
+      width: 1px;
+      background-color: $light-grey;
+      height: 6rem;
+    }
+  }
+
+  &__page-link {
   }
 }
