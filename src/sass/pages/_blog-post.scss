@@ -1,0 +1,36 @@
+.blog-post-page {
+  @extend .project-page;
+
+  &__post {
+    @extend .project-page__project;
+  }
+
+  &__main {
+    @extend .project-page__main;
+    padding-top: 10vh;
+  }
+
+  &__image {
+    @extend .project-page__image;
+  }
+
+  &__title {
+    @extend .project-page__title;
+  }
+
+  &__author {
+    margin-top: -1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+    @extend .project-page__details;
+  }
+
+  &__text {
+  }
+
+  &__back-link {
+    @extend .project-page__back-link;
+  }
+}

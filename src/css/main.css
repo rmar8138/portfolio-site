@@ -231,27 +231,27 @@ ul {
   display: none;
 }
 
-.project-page {
+.project-page, .blog-post-page {
   background-color: #111;
   color: #ffffff;
 }
-.project-page__project {
+.project-page__project, .blog-post-page__post {
   padding-top: 10vh;
 }
-.project-page__main {
+.project-page__main, .blog-post-page__main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-page__main > * {
+.project-page__main > *, .blog-post-page__main > * {
   margin-bottom: 2rem;
 }
-.project-page__image {
+.project-page__image, .blog-post-page__image {
   display: block;
   position: relative;
   width: 100vw;
 }
-.project-page__title {
+.project-page__title, .blog-post-page__title {
   font-size: 4rem;
   font-weight: 300;
   text-align: center;
@@ -261,12 +261,12 @@ ul {
   font-weight: 300;
   text-align: center;
 }
-.project-page__details {
+.project-page__details, .blog-post-page__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-page__details > * {
+.project-page__details > *, .blog-post-page__content > * {
   margin-bottom: 2rem;
 }
 .project-page__github {
@@ -279,7 +279,7 @@ ul {
 .project-page__tech-header {
   color: #777;
 }
-.project-page__back-link {
+.project-page__back-link, .blog-post-page__back-link {
   color: #777;
   display: inline-block;
   text-align: center;
@@ -303,6 +303,14 @@ ul {
 
 .blog-page__item:last-child::after {
   display: none;
+}
+
+.blog-post-page__main {
+  padding-top: 10vh;
+}
+.blog-post-page__author {
+  margin-top: -1.5rem;
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
