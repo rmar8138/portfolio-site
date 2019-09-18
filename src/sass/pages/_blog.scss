@@ -12,19 +12,17 @@
       @extend .projects__item__title;
     }
 
-    &__date {
-    }
-
     &__image {
       @extend .projects__item__image;
-    }
-
-    &__description {
     }
 
     &:last-child::after {
       // remove vertical rule after last item
       display: none;
     }
+  }
+
+  &__read-more {
+    @extend .projects__page-link;
   }
 }

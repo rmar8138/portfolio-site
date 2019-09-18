@@ -81,6 +81,7 @@ ul {
   line-height: 1.4;
   color: #ffffff;
 }
+
 .visible {
   visibility: visible;
   overflow: hidden;
@@ -181,8 +182,17 @@ ul {
   font-size: 2.4rem;
 }
 
-.bio__header {
+.bio a {
+  color: #777;
+  border-bottom: 1px solid #777;
+}
+.bio > *:not(:last-child) {
   margin-bottom: 2rem;
+}
+.bio__resume {
+  color: #777;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
 }
 
 .projects, .projects-page__projects, .contact-page, .blog-page {
@@ -196,6 +206,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .projects__item > :not(:last-child), .blog-page__item > :not(:last-child), .projects-page__item > :not(:last-child) {
   margin-bottom: 2rem;
@@ -204,7 +215,7 @@ ul {
   font-weight: 300;
 }
 .projects__item__image, .blog-page__item__image {
-  width: 100%;
+  width: 100vw;
 }
 .projects__item::after, .blog-page__item::after, .projects-page__item::after {
   z-index: 0;
@@ -215,7 +226,7 @@ ul {
   background-color: #d1d1d1;
   height: 6rem;
 }
-.projects__page-link {
+.projects__page-link, .blog-page__read-more, .projects-page__view-project {
   color: #777;
   padding-bottom: 5px;
   border-bottom: 1px solid #777;
@@ -232,7 +243,6 @@ ul {
 .projects-page__item:last-child::after {
   display: none;
 }
-
 .project-page, .blog-post-page {
   background-color: #111;
   color: #ffffff;
@@ -307,7 +317,6 @@ ul {
 .blog-page__item:last-child::after {
   display: none;
 }
-
 .blog-post-page__main {
   padding-top: 10vh;
 }
