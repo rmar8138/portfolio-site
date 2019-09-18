@@ -23,13 +23,13 @@
   }
 
   &__title {
-    font-size: $mobile-large;
+    font-size: -large;
     font-weight: 300;
     text-align: center;
   }
 
   &__subtitle {
-    font-size: $mobile-small;
+    font-size: $fs-small;
     font-weight: 300;
     text-align: center;
   }
@@ -81,7 +81,7 @@
 
     &__logo a {
       color: $white;
-      font-size: $mobile-medium;
+      font-size: $fs-medium;
       font-weight: 300;
     }
   }
@@ -95,6 +95,6 @@
   }
 
   &__copyright {
-    font-size: $mobile-xsmall;
+    font-size: $fs-xsmall;
   }
 }

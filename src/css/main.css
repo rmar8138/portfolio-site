@@ -264,7 +264,7 @@ ul {
   width: 100vw;
 }
 .project-page__title, .blog-post-page__title {
-  font-size: 4rem;
+  font-size: -large;
   font-weight: 300;
   text-align: center;
 }

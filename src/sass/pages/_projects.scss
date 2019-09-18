@@ -1,7 +1,7 @@
 .projects-page {
   &__header {
     @extend .projects__header;
-    font-size: $mobile-large;
+    font-size: $fs-large;
     margin-bottom: 30vh;
     font-weight: 300;
   }
