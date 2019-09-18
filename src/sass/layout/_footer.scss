@@ -7,7 +7,8 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  &__logo {
+  &__logo a {
+    color: $white;
     font-size: $mobile-large;
     font-weight: 300;
   }
