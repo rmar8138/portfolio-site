@@ -253,6 +253,7 @@ ul {
 }
 .project-page__title {
   font-size: 4rem;
+  font-weight: 300;
   text-align: center;
 }
 .project-page__subtitle {
