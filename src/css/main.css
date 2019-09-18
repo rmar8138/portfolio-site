@@ -246,7 +246,9 @@ ul {
   margin-bottom: 2rem;
 }
 .projects__item__title, .blog-page__item__title {
+  font-size: 2.4rem;
   font-weight: 300;
+  margin-bottom: 2rem;
 }
 .projects__item__image, .blog-page__item__image {
   width: 100vw;
@@ -259,6 +261,11 @@ ul {
   width: 1px;
   background-color: #d1d1d1;
   height: 6rem;
+}
+@media screen and (min-width: 640px) {
+  .projects__item, .blog-page__item, .projects-page__item {
+    flex-direction: row;
+  }
 }
 .projects__page-link, .blog-page__read-more, .projects-page__view-project {
   color: #777;

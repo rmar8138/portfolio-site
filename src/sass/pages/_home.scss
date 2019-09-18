@@ -65,7 +65,9 @@
     }
 
     &__title {
+      font-size: $fs-medium;
       font-weight: 300;
+      margin-bottom: 2rem;
     }
 
     &__image {
@@ -80,6 +82,10 @@
       width: 1px;
       background-color: $light-grey;
       height: 6rem;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+      flex-direction: row;
     }
   }
 
