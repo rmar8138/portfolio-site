@@ -1,0 +1,100 @@
+.project-page {
+  background-color: $black;
+  color: $white;
+
+  &__project {
+    padding-top: 10vh;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    width: 100vw;
+  }
+
+  &__title {
+    font-size: $mobile-large;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: $mobile-small;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__github {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__icon {
+    @extend .social__icon;
+  }
+
+  &__tech {
+    width: 100%;
+  }
+
+  &__tech-header {
+    @extend .skills__header;
+
+    color: $dark-grey;
+  }
+
+  &__tech-list {
+    @extend .skills__list;
+  }
+
+  &__back-link {
+    color: $dark-grey;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $dark-grey;
+    margin-bottom: 6rem;
+  }
+
+  &__footer {
+    @extend .footer;
+    height: 15rem;
+
+    &__logo {
+      font-size: $mobile-medium;
+      font-weight: 300;
+    }
+  }
+
+  &__social {
+    @extend .social;
+
+    li a img {
+      width: 2rem;
+    }
+  }
+
+  &__copyright {
+    font-size: $mobile-xsmall;
+  }
+}

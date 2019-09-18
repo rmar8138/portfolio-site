@@ -25,6 +25,11 @@ function toggleMenu() {
   if (invert) {
     navbar.classList.toggle('invert');
   }
+
+  // add white class to navbar if in project page
+  if (navbar.dataset.page === 'project') {
+    menu.classList.toggle('white');
+  }
 }
 
 window.addEventListener('scroll', detectFooterPosition);
