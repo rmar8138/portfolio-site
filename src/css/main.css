@@ -174,7 +174,7 @@ ul {
 .skills {
   margin-bottom: 6rem;
 }
-.skills__header, .project-page__tech-header {
+.skills__header, .contact .email-label, .contact .social-label, .project-page__tech-header {
   margin-bottom: 2rem;
 }
 .skills__list, .project-page__tech-list {
@@ -185,11 +185,11 @@ ul {
   margin-bottom: 2rem;
 }
 
-.projects, .projects-page__projects, .blog-page {
+.projects, .projects-page__projects, .contact, .blog-page {
   text-align: center;
   margin-bottom: 6rem;
 }
-.projects__header, .projects-page__header, .blog-page__header {
+.projects__header, .projects-page__header, .blog-page__header, .contact__header {
   margin-bottom: 4rem;
 }
 .projects__item, .blog-page__item, .projects-page__item {
@@ -221,12 +221,12 @@ ul {
   border-bottom: 1px solid #777;
 }
 
-.projects-page__header, .blog-page__header {
+.projects-page__header, .blog-page__header, .contact__header {
   font-size: 4rem;
   margin-bottom: 30vh;
   font-weight: 300;
 }
-.projects-page__projects, .blog-page {
+.projects-page__projects, .contact, .blog-page {
   margin-top: 30vh;
 }
 .projects-page__item:last-child::after {
@@ -314,6 +314,32 @@ ul {
 .blog-post-page__author {
   margin-top: -1.5rem;
   margin-bottom: 4rem;
+}
+.contact {
+  text-align: center;
+}
+.contact__header {
+  margin-bottom: 10vh;
+}
+.contact__text {
+  margin-bottom: 2rem;
+}
+.contact span {
+  display: block;
+}
+.contact .email {
+  display: inline-block;
+  color: #111;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+.contact__social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact__social > *:not(:last-child) {
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+.contact {
+  text-align: center;
+
+  @extend .projects-page__projects;
+
+  &__header {
+    @extend .blog-page__header;
+    margin-bottom: 10vh;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  span {
+    display: block;
+  }
+
+  & .email-label,
+  & .social-label {
+    @extend .skills__header;
+  }
+
+  & .email {
+    display: inline-block;
+    color: $black;
+    font-size: $mobile-medium;
+    margin-bottom: 4rem;
+  }
+
+  &__social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
