@@ -1,0 +1,30 @@
+.blog-page {
+  @extend .projects-page__projects;
+
+  &__header {
+    @extend .projects-page__header;
+  }
+
+  &__item {
+    @extend .projects__item;
+
+    &__title {
+      @extend .projects__item__title;
+    }
+
+    &__date {
+    }
+
+    &__image {
+      @extend .projects__item__image;
+    }
+
+    &__description {
+    }
+
+    &:last-child::after {
+      // remove vertical rule after last item
+      display: none;
+    }
+  }
+}
