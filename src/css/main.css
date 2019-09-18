@@ -174,7 +174,7 @@ ul {
 .skills {
   margin-bottom: 6rem;
 }
-.skills__header, .contact .email-label, .contact .social-label, .project-page__tech-header {
+.skills__header, .contact-page .email-label, .contact-page .social-label, .project-page__tech-header {
   margin-bottom: 2rem;
 }
 .skills__list, .project-page__tech-list {
@@ -185,11 +185,11 @@ ul {
   margin-bottom: 2rem;
 }
 
-.projects, .projects-page__projects, .contact, .blog-page {
+.projects, .projects-page__projects, .contact-page, .blog-page {
   text-align: center;
   margin-bottom: 6rem;
 }
-.projects__header, .projects-page__header, .blog-page__header, .contact__header {
+.projects__header, .projects-page__header, .blog-page__header, .contact-page__header {
   margin-bottom: 4rem;
 }
 .projects__item, .blog-page__item, .projects-page__item {
@@ -221,12 +221,12 @@ ul {
   border-bottom: 1px solid #777;
 }
 
-.projects-page__header, .blog-page__header, .contact__header {
+.projects-page__header, .blog-page__header, .contact-page__header {
   font-size: 4rem;
   margin-bottom: 30vh;
   font-weight: 300;
 }
-.projects-page__projects, .contact, .blog-page {
+.projects-page__projects, .contact-page, .blog-page {
   margin-top: 30vh;
 }
 .projects-page__item:last-child::after {
@@ -315,30 +315,30 @@ ul {
   margin-top: -1.5rem;
   margin-bottom: 4rem;
 }
-.contact {
+.contact-page {
   text-align: center;
 }
-.contact__header {
+.contact-page__header {
   margin-bottom: 10vh;
 }
-.contact__text {
+.contact-page__text {
   margin-bottom: 2rem;
 }
-.contact span {
+.contact-page span {
   display: block;
 }
-.contact .email {
+.contact-page .email {
   display: inline-block;
   color: #111;
   font-size: 2.4rem;
   margin-bottom: 4rem;
 }
-.contact__social {
+.contact-page__social {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.contact__social > *:not(:last-child) {
+.contact-page__social > *:not(:last-child) {
   margin-right: 2rem;
 }
 
