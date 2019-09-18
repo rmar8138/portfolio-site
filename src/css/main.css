@@ -292,7 +292,8 @@ ul {
 .project-page__footer {
   height: 15rem;
 }
-.project-page__footer__logo {
+.project-page__footer__logo a {
+  color: #ffffff;
   font-size: 2.4rem;
   font-weight: 300;
 }

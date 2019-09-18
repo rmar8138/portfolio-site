@@ -80,7 +80,8 @@
     @extend .footer;
     height: 15rem;
 
-    &__logo {
+    &__logo a {
+      color: $white;
       font-size: $mobile-medium;
       font-weight: 300;
     }
