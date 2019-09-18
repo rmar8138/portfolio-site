@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <nav id="nav" class="nav">
+    <nav id="nav" class="nav invert" data-page="project">
       <span class="nav__logo">Ragan Martinez</span>
       <button id="menuButton" class="button nav__menu-button">Menu</button>
       <ul class="nav__navlist">
@@ -25,7 +25,7 @@
           <a class="menu__link" href="../index.html">Home</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link">Projects</a>
+          <a class="menu__link" href="./projects.html">Projects</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="blog.html">Blog</a>
@@ -35,23 +35,47 @@
         </li>
       </ul>
     </div>
-    <section class="project-page__project">
-      <div class="container">
-        <img
-          class="project-page__image"
-          src="../img/project.jpg"
-          alt="Project"
-        />
-        <h1 class="project-page__title">Flashcard App</h1>
-        <h2 class="project-page__subtitle">
-          A flashcard app that runs in the terminal
-        </h2>
-        <p class="project-page__description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam hic
-          dignissimos a, quaerat iusto ad quae sed asperiores alias laboriosam!
-        </p>
-      </div>
-    </section>
+    <main class="project-page">
+      <section class="project-page__project">
+        <div class="container">
+          <div class="project-page__main">
+            <img
+              class="project-page__image"
+              src="../img/project.jpg"
+              alt="Project"
+            />
+            <h1 class="project-page__title">Flashcard App</h1>
+            <h2 class="project-page__subtitle">
+              A flashcard app that runs in the terminal
+            </h2>
+          </div>
+          <div class="project-page__details">
+            <a
+              class="project-page__github"
+              target="_blank"
+              href="http://github.com"
+            >
+              <img
+                class="project-page__icon"
+                src="https://img.icons8.com/material/24/000000/github.png"
+              />
+            </a>
+            <div class="project-page__tech">
+              <h3 class="project-page__tech-header">Tech</h3>
+              <ul class="project-page__tech-list">
+                <li class="project-page__tech-item">Ruby</li>
+              </ul>
+            </div>
+            <p class="project-page__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              hic dignissimos a, quaerat iusto ad quae sed asperiores alias
+              laboriosam!
+            </p>
+            <a class="project-page__back-link" href="./projects.html">Back</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer id="footer" class="project-page__footer">
       <h4 class="project-page__footer__logo">RM</h4>
       <ul class="project-page__social">

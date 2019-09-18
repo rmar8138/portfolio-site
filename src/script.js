@@ -21,8 +21,8 @@ function toggleMenu() {
     menuButton.textContent = 'Menu';
   }
 
-  // change navbar color if not in footer
-  if (invert) {
+  // change navbar color if not in footer and not in project page
+  if (invert & (navbar.dataset.page !== 'project')) {
     navbar.classList.toggle('invert');
   }
 }

@@ -116,7 +116,7 @@ ul {
   display: flex;
   justify-content: space-evenly;
 }
-.social__icon {
+.social__icon, .project-page__icon {
   background-color: #ffffff;
   filter: invert(100%);
 }
@@ -165,10 +165,10 @@ ul {
 .skills {
   margin-bottom: 6rem;
 }
-.skills__header {
+.skills__header, .project-page__tech-header {
   margin-bottom: 2rem;
 }
-.skills__list {
+.skills__list, .project-page__tech-list {
   font-size: 2.4rem;
 }
 
@@ -223,23 +223,60 @@ ul {
   display: none;
 }
 
+.project-page {
+  background-color: #111;
+  color: #ffffff;
+}
 .project-page__project {
   padding-top: 10vh;
 }
-.project-page__image {
-  width: 100%;
+.project-page__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-page__main > * {
   margin-bottom: 2rem;
 }
+.project-page__image {
+  display: block;
+  position: relative;
+  width: 100vw;
+}
 .project-page__title {
-  font-size: 2.4rem;
+  font-size: 4rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 .project-page__subtitle {
   font-size: 1.8rem;
   font-weight: 300;
   text-align: center;
+}
+.project-page__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-page__details > * {
   margin-bottom: 2rem;
+}
+.project-page__github {
+  display: inline-block;
+  text-align: center;
+}
+.project-page__tech {
+  width: 100%;
+}
+.project-page__tech-header {
+  color: #777;
+}
+.project-page__back-link {
+  color: #777;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+  margin-bottom: 6rem;
 }
 .project-page__footer {
   height: 15rem;
