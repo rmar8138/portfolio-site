@@ -107,7 +107,8 @@ ul {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.footer__logo {
+.footer__logo a {
+  color: #ffffff;
   font-size: 4rem;
   font-weight: 300;
 }
@@ -215,8 +216,9 @@ ul {
   height: 6rem;
 }
 .projects__page-link {
+  color: #777;
   padding-bottom: 5px;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #777;
 }
 
 .projects-page__header, .blog-page__header {

@@ -59,7 +59,8 @@
   }
 
   &__page-link {
+    color: $dark-grey;
     padding-bottom: 5px;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $dark-grey;
   }
 }
