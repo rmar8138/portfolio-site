@@ -15,7 +15,7 @@ html {
 body {
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
-  color: #101010;
+  color: #111;
   line-height: 1.6;
 }
 
@@ -39,7 +39,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #101010;
+  color: #111;
 }
 
 ul {
@@ -47,7 +47,7 @@ ul {
 }
 
 .button, .nav__menu-button {
-  color: #101010;
+  color: #111;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   border: none;
@@ -64,7 +64,7 @@ ul {
 .menu {
   padding: 160px 80px;
   visibility: hidden;
-  background-color: #101010;
+  background-color: #111;
   position: fixed;
   top: 0;
   left: 0;
@@ -91,7 +91,7 @@ ul {
 }
 
 .footer {
-  background-color: #101010;
+  background-color: #111;
   color: #ffffff;
   height: 100vh;
   text-align: center;
@@ -180,7 +180,7 @@ ul {
   text-align: center;
   margin-bottom: 6rem;
 }
-.projects__header {
+.projects__header, .project-page__header {
   margin-bottom: 4rem;
 }
 .projects__item, .project-page__item {
@@ -208,11 +208,16 @@ ul {
 }
 .projects__page-link {
   padding-bottom: 5px;
-  border-bottom: 1px solid #101010;
+  border-bottom: 1px solid #111;
 }
 
+.project-page__header {
+  font-size: 4rem;
+  margin-bottom: 30vh;
+  font-weight: 300;
+}
 .project-page__projects {
-  margin-top: 10rem;
+  margin-top: 30vh;
 }
 .project-page__item:last-child::after {
   display: none;
