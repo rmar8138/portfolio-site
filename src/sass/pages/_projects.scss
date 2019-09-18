@@ -19,4 +19,8 @@
       display: none;
     }
   }
+
+  &__view-project {
+    @extend .projects__page-link;
+  }
 }
