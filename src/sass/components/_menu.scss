@@ -31,3 +31,13 @@
   visibility: visible;
   overflow: hidden;
 }
+
+.white {
+  @extend .menu;
+  background-color: $white;
+  color: $black;
+
+  a {
+    color: $black;
+  }
+}

@@ -61,7 +61,7 @@ ul {
   background-color: none;
 }
 
-.menu {
+.menu, .white {
   padding: 160px 80px;
   visibility: hidden;
   background-color: #111;
@@ -72,7 +72,7 @@ ul {
   width: 100vw;
   z-index: 1;
 }
-.menu h3 {
+.menu h3, .white h3 {
   color: #777;
   font-weight: 300;
 }
@@ -84,6 +84,14 @@ ul {
 .visible {
   visibility: visible;
   overflow: hidden;
+}
+
+.white {
+  background-color: #ffffff;
+  color: #111;
+}
+.white a {
+  color: #111;
 }
 
 .container {
