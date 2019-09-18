@@ -1,5 +1,5 @@
 .contact-page {
-  text-align: center;
+  text-align: left;
 
   @extend .projects-page__projects;
 
@@ -19,6 +19,7 @@
   & .email-label,
   & .social-label {
     @extend .skills__header;
+    font-weight: 700;
   }
 
   & .email {
@@ -31,7 +32,7 @@
   &__social {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     & > *:not(:last-child) {
       margin-right: 2rem;

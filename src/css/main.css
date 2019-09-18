@@ -316,7 +316,7 @@ ul {
   margin-bottom: 4rem;
 }
 .contact-page {
-  text-align: center;
+  text-align: left;
 }
 .contact-page__header {
   margin-bottom: 10vh;
@@ -327,6 +327,9 @@ ul {
 .contact-page span {
   display: block;
 }
+.contact-page .email-label, .contact-page .social-label {
+  font-weight: 700;
+}
 .contact-page .email {
   display: inline-block;
   color: #111;
@@ -336,7 +339,7 @@ ul {
 .contact-page__social {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .contact-page__social > *:not(:last-child) {
   margin-right: 2rem;
