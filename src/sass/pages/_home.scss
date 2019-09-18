@@ -2,6 +2,11 @@
 
 .about {
   margin-bottom: 6rem;
+
+  @media screen and (min-width: $bp-medium) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .skills {
@@ -12,6 +17,10 @@
 
   &__list {
     font-size: $fs-medium;
+  }
+
+  @media screen and (min-width: $bp-medium) {
+    width: 50%;
   }
 }
 
@@ -29,6 +38,10 @@
     color: $dark-grey;
     padding-bottom: 5px;
     border-bottom: 1px solid $dark-grey;
+  }
+
+  @media screen and (min-width: $bp-medium) {
+    width: 50%;
   }
 }
 

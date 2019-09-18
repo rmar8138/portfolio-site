@@ -98,6 +98,11 @@ ul {
 .container {
   padding: 2rem;
 }
+@media screen and (min-width: 640px) {
+  .container {
+    padding: 14vw;
+  }
+}
 
 .footer, .project-page__footer {
   background-color: #111;
@@ -154,8 +159,18 @@ ul {
   padding: 2rem;
   z-index: 2;
 }
+@media screen and (min-width: 640px) {
+  .nav__menu-button {
+    display: none;
+  }
+}
 .nav__navlist {
   display: none;
+}
+@media screen and (min-width: 640px) {
+  .nav__navlist {
+    display: flex;
+  }
 }
 .nav__item:not(:last-child) {
   margin-right: 1rem;
@@ -167,9 +182,18 @@ ul {
 .invert button {
   color: #ffffff;
 }
+.invert a {
+  color: #ffffff;
+}
 
 .about {
   margin-bottom: 6rem;
+}
+@media screen and (min-width: 640px) {
+  .about {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .skills {
@@ -180,6 +204,11 @@ ul {
 }
 .skills__list, .project-page__tech-list {
   font-size: 2.4rem;
+}
+@media screen and (min-width: 640px) {
+  .skills {
+    width: 50%;
+  }
 }
 
 .bio a {
@@ -193,6 +222,11 @@ ul {
   color: #777;
   padding-bottom: 5px;
   border-bottom: 1px solid #777;
+}
+@media screen and (min-width: 640px) {
+  .bio {
+    width: 50%;
+  }
 }
 
 .projects, .projects-page__projects, .contact-page, .blog-page {

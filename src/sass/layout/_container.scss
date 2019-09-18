@@ -1,3 +1,7 @@
 .container {
   padding: 2rem;
+
+  @media screen and (min-width: $bp-medium) {
+    padding: 14vw;
+  }
 }
