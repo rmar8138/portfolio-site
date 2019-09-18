@@ -1,0 +1,45 @@
+.project-page {
+  &__project {
+    padding-top: 10vh;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: $mobile-medium;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    font-size: $mobile-small;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__footer {
+    @extend .footer;
+    height: 15rem;
+
+    &__logo {
+      font-size: $mobile-medium;
+      font-weight: 300;
+    }
+  }
+
+  &__social {
+    @extend .social;
+
+    li a img {
+      width: 2rem;
+    }
+  }
+
+  &__copyright {
+    font-size: $mobile-xsmall;
+  }
+}
