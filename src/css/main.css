@@ -63,7 +63,7 @@ ul {
 
 .menu, .white {
   padding: 160px 80px;
-  visibility: hidden;
+  display: none;
   background-color: #111;
   position: fixed;
   top: 0;
@@ -83,7 +83,7 @@ ul {
 }
 
 .visible {
-  visibility: visible;
+  display: block;
   overflow: hidden;
 }
 

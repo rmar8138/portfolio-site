@@ -3,6 +3,14 @@ const footer = document.getElementById('footer');
 const menu = document.getElementById('menu');
 const menuButton = document.getElementById('menuButton');
 
+const skillsList = document.querySelectorAll('.skills__item');
+const navLogo = document.querySelectorAll('.nav__logo');
+const headings = document.querySelectorAll('.header__heading');
+const navItems = document.querySelectorAll('.nav__item');
+const menuItems = document.querySelectorAll('.menu__link');
+const bioText = document.querySelectorAll('.bio__all-text');
+const projectTextFadeIn = document.querySelectorAll('.project-fade-in');
+
 let invert = true;
 
 function toggleMenu() {
@@ -17,6 +25,7 @@ function toggleMenu() {
     menuButton.textContent = 'Close';
   } else {
     menuButton.textContent = 'Menu';
+    ScrollReveal().clean(menuItems);
   }
 
   // change navbar color if not in footer
@@ -59,3 +68,65 @@ function detectFooterPosition(e) {
 
 window.addEventListener('scroll', detectFooterPosition);
 menuButton.addEventListener('click', toggleMenu);
+
+// ANIMATIONS //
+
+let delay = 200;
+
+// Animate nav logo
+ScrollReveal().reveal(navLogo, {
+  distance: '20px',
+  origin: 'bottom',
+});
+
+// Animate menu button for mobile
+ScrollReveal().reveal(menuButton, {
+  delay,
+  distance: '20px',
+  origin: 'bottom',
+});
+
+// Animate navlist items
+ScrollReveal().reveal(navItems, {
+  delay,
+  interval: delay,
+  distance: '20px',
+  origin: 'bottom',
+});
+
+// Animate headings
+ScrollReveal().reveal(headings, {
+  delay: delay * 2,
+  interval: delay,
+  distance: '20px',
+  origin: 'bottom',
+});
+
+// Animate menu list items
+// ScrollReveal().reveal(menuItems, {
+//   interval: delay,
+//   distance: '20px',
+//   origin: 'bottom',
+//   reset: true,
+// });
+
+// Animate skills list
+ScrollReveal().reveal(skillsList, {
+  delay,
+  interval: delay,
+  distance: '20px',
+  origin: 'bottom',
+});
+
+ScrollReveal().reveal(bioText, {
+  delay,
+  distance: '20px',
+  origin: 'bottom',
+});
+
+ScrollReveal().reveal(projectTextFadeIn, {
+  delay,
+  interval: delay,
+  distance: '20px',
+  origin: 'bottom',
+});
