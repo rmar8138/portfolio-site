@@ -72,6 +72,10 @@
 
     &__image {
       width: 100vw;
+
+      @media screen and (min-width: $bp-medium) {
+        width: 100%;
+      }
     }
 
     &::after {
@@ -84,9 +88,18 @@
       height: 6rem;
     }
 
-    @media screen and (min-width: $bp-medium) {
-      flex-direction: row;
-    }
+    // &:nth-child(odd) {
+    //   @media screen and (min-width: $bp-medium) {
+    //     a {
+    //       order: 2;
+    //     }
+    //   }
+    // }
+
+    // @media screen and (min-width: $bp-medium) {
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    // }
   }
 
   &__page-link {

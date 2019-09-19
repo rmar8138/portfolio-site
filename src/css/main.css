@@ -253,6 +253,11 @@ ul {
 .projects__item__image, .blog-page__item__image {
   width: 100vw;
 }
+@media screen and (min-width: 640px) {
+  .projects__item__image, .blog-page__item__image {
+    width: 100%;
+  }
+}
 .projects__item::after, .blog-page__item::after, .projects-page__item::after {
   z-index: 0;
   margin: 4rem auto;
@@ -261,11 +266,6 @@ ul {
   width: 1px;
   background-color: #d1d1d1;
   height: 6rem;
-}
-@media screen and (min-width: 640px) {
-  .projects__item, .blog-page__item, .projects-page__item {
-    flex-direction: row;
-  }
 }
 .projects__page-link, .blog-page__read-more, .projects-page__view-project {
   color: #777;
