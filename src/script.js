@@ -10,6 +10,7 @@ const navItems = document.querySelectorAll('.nav__item');
 const menuItems = document.querySelectorAll('.menu__link');
 const bioText = document.querySelectorAll('.bio__all-text');
 const projectTextFadeIn = document.querySelectorAll('.project-fade-in');
+const footerFadeIn = document.querySelectorAll('.footer-fade-in');
 
 let invert = true;
 
@@ -125,6 +126,13 @@ ScrollReveal().reveal(bioText, {
 });
 
 ScrollReveal().reveal(projectTextFadeIn, {
+  delay,
+  interval: delay,
+  distance: '20px',
+  origin: 'bottom',
+});
+
+ScrollReveal().reveal(footerFadeIn, {
   delay,
   interval: delay,
   distance: '20px',
