@@ -268,7 +268,7 @@ ul {
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 840px) {
-  .projects__item__link {
+  .projects__item__link, .blog-page__item__link {
     display: inline-block;
     width: 50%;
     padding: 4rem;
@@ -283,19 +283,19 @@ ul {
   }
 }
 @media screen and (min-width: 840px) {
-  .projects__item__text {
+  .projects__item__text, .blog-page__item__text {
     width: 50%;
     padding: 4rem;
   }
 }
-.projects__item__view-project, .projects-page__view-project, .projects__page-link, .blog-page__read-more {
+.projects__item__view-project, .blog-page__read-more, .projects-page__view-project, .projects__page-link {
   display: inline-block;
   color: #777;
   padding-bottom: 5px;
   border-bottom: 1px solid #777;
 }
 @media screen and (min-width: 840px) {
-  .projects__item__view-project, .projects-page__view-project, .projects__page-link, .blog-page__read-more {
+  .projects__item__view-project, .blog-page__read-more, .projects-page__view-project, .projects__page-link {
     margin-top: 2rem;
   }
 }
@@ -325,7 +325,7 @@ ul {
   }
 }
 @media screen and (min-width: 840px) {
-  .projects__page-link, .blog-page__read-more {
+  .projects__page-link {
     margin-top: 2rem;
   }
 }

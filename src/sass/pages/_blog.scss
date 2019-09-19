@@ -12,8 +12,16 @@
       @extend .projects__item__title;
     }
 
+    &__link {
+      @extend .projects__item__link;
+    }
+
     &__image {
       @extend .projects__item__image;
+    }
+
+    &__text {
+      @extend .projects__item__text;
     }
 
     &:last-child::after {
@@ -23,6 +31,6 @@
   }
 
   &__read-more {
-    @extend .projects__page-link;
+    @extend .projects__item__view-project;
   }
 }
