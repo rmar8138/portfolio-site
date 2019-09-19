@@ -14,24 +14,58 @@
     & > * {
       margin-bottom: 2rem;
     }
+
+    @media screen and (min-width: $bp-medium) {
+      flex-direction: row;
+      margin-bottom: 4rem;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      margin-bottom: 8rem;
+    }
   }
 
   &__image {
     display: block;
     position: relative;
     width: 100vw;
+
+    @media screen and (min-width: $bp-medium) {
+      max-width: 50%;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+      width: 50%;
+      margin-left: 6vw;
+    }
   }
 
   &__title {
-    font-size: -large;
+    font-size: $fs-large;
     font-weight: 300;
-    text-align: center;
+
+    @media screen and (min-width: $bp-large) {
+      font-size: $fs-xlarge;
+    }
   }
 
   &__subtitle {
     font-size: $fs-small;
     font-weight: 300;
-    text-align: center;
+
+    @media screen and (min-width: $bp-large) {
+      font-size: $fs-medium;
+    }
   }
 
   &__details {
@@ -42,6 +76,11 @@
     & > * {
       margin-bottom: 2rem;
     }
+
+    @media screen and (min-width: $bp-large) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 
   &__github {
@@ -51,10 +90,25 @@
 
   &__icon {
     @extend .social__icon;
+
+    @media screen and (min-width: $bp-large) {
+      width: 5rem;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      width: 3vw;
+    }
   }
 
   &__tech {
     width: 100%;
+
+    @media screen and (min-width: $bp-large) {
+      align-self: flex-start;
+      text-align: right;
+      width: auto;
+      margin-right: 2rem;
+    }
   }
 
   &__tech-header {
@@ -66,13 +120,20 @@
     @extend .skills__list;
   }
 
+  &__text {
+    @media screen and (min-width: $bp-large) {
+      width: 50%;
+      margin-left: 2rem;
+    }
+  }
+
   &__back-link {
     color: $dark-grey;
     display: inline-block;
     text-align: center;
     padding-bottom: 5px;
     border-bottom: 1px solid $dark-grey;
-    margin-bottom: 6rem;
+    margin: 2rem 0;
   }
 
   &__footer {

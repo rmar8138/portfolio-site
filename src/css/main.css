@@ -103,6 +103,11 @@ ul {
     padding: 10vw;
   }
 }
+@media screen and (min-width: 1300px) {
+  .container {
+    padding: 16vw;
+  }
+}
 
 .footer, .project-page__footer {
   background-color: #111;
@@ -361,20 +366,58 @@ ul {
 .project-page__main > *, .blog-post-page__main > * {
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 640px) {
+  .project-page__main, .blog-post-page__main {
+    flex-direction: row;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 840px) {
+  .project-page__main, .blog-post-page__main {
+    margin-bottom: 8rem;
+  }
+}
 .project-page__image, .blog-post-page__image {
   display: block;
   position: relative;
   width: 100vw;
 }
-.project-page__title, .blog-post-page__title {
-  font-size: -large;
-  font-weight: 300;
+@media screen and (min-width: 640px) {
+  .project-page__image, .blog-post-page__image {
+    max-width: 50%;
+  }
+}
+.project-page__heading {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+.project-page__heading > * {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 640px) {
+  .project-page__heading {
+    width: 50%;
+    margin-left: 6vw;
+  }
+}
+.project-page__title, .blog-post-page__title {
+  font-size: 4rem;
+  font-weight: 300;
+}
+@media screen and (min-width: 840px) {
+  .project-page__title, .blog-post-page__title {
+    font-size: 6.4rem;
+  }
 }
 .project-page__subtitle {
   font-size: 1.8rem;
   font-weight: 300;
-  text-align: center;
+}
+@media screen and (min-width: 840px) {
+  .project-page__subtitle {
+    font-size: 2.4rem;
+  }
 }
 .project-page__details, .blog-post-page__content {
   display: flex;
@@ -384,15 +427,45 @@ ul {
 .project-page__details > *, .blog-post-page__content > * {
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 840px) {
+  .project-page__details, .blog-post-page__content {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .project-page__github {
   display: inline-block;
   text-align: center;
 }
+@media screen and (min-width: 840px) {
+  .project-page__icon {
+    width: 5rem;
+  }
+}
+@media screen and (min-width: 840px) {
+  .project-page__icon {
+    width: 3vw;
+  }
+}
 .project-page__tech {
   width: 100%;
 }
+@media screen and (min-width: 840px) {
+  .project-page__tech {
+    align-self: flex-start;
+    text-align: right;
+    width: auto;
+    margin-right: 2rem;
+  }
+}
 .project-page__tech-header {
   color: #777;
+}
+@media screen and (min-width: 840px) {
+  .project-page__text {
+    width: 50%;
+    margin-left: 2rem;
+  }
 }
 .project-page__back-link, .blog-post-page__back-link {
   color: #777;
@@ -400,7 +473,7 @@ ul {
   text-align: center;
   padding-bottom: 5px;
   border-bottom: 1px solid #777;
-  margin-bottom: 6rem;
+  margin: 2rem 0;
 }
 .project-page__footer {
   height: 15rem;

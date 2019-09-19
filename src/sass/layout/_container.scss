@@ -4,4 +4,8 @@
   @media screen and (min-width: $bp-medium) {
     padding: 10vw;
   }
+
+  @media screen and (min-width: $bp-xlarge) {
+    padding: 16vw;
+  }
 }
