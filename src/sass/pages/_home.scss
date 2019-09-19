@@ -96,6 +96,17 @@
       }
     }
 
+    &__view-project {
+      display: inline-block;
+      color: $dark-grey;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $dark-grey;
+
+      @media screen and (min-width: $bp-large) {
+        margin-top: 2rem;
+      }
+    }
+
     &::after {
       z-index: 0;
       margin: 4rem auto;
@@ -120,14 +131,12 @@
 
     @media screen and (min-width: $bp-large) {
       flex-direction: row;
+      margin: 6rem 0;
     }
   }
 
   &__page-link {
-    display: inline-block;
-    color: $dark-grey;
-    padding-bottom: 5px;
-    border-bottom: 1px solid $dark-grey;
+    @extend .projects__item__view-project;
 
     @media screen and (min-width: $bp-large) {
       margin-top: 2rem;

@@ -118,6 +118,15 @@ ul {
   font-size: 4rem;
   font-weight: 300;
 }
+@media screen and (min-width: 640px) {
+  .footer, .project-page__footer {
+    height: 30rem;
+    align-items: center;
+  }
+  .footer > *, .project-page__footer > * {
+    width: 50%;
+  }
+}
 
 .contact h5 {
   font-weight: 300;
@@ -173,7 +182,12 @@ ul {
   }
 }
 .nav__item:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 4rem;
+}
+@media screen and (min-width: 640px) {
+  .nav {
+    padding: 2rem 10vw;
+  }
 }
 
 .invert {
@@ -274,6 +288,17 @@ ul {
     padding: 4rem;
   }
 }
+.projects__item__view-project, .projects-page__view-project, .projects__page-link, .blog-page__read-more {
+  display: inline-block;
+  color: #777;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+}
+@media screen and (min-width: 840px) {
+  .projects__item__view-project, .projects-page__view-project, .projects__page-link, .blog-page__read-more {
+    margin-top: 2rem;
+  }
+}
 .projects__item::after, .blog-page__item::after, .projects-page__item::after {
   z-index: 0;
   margin: 4rem auto;
@@ -296,16 +321,11 @@ ul {
 @media screen and (min-width: 840px) {
   .projects__item, .blog-page__item, .projects-page__item {
     flex-direction: row;
+    margin: 6rem 0;
   }
 }
-.projects__page-link, .blog-page__read-more, .projects-page__view-project {
-  display: inline-block;
-  color: #777;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #777;
-}
 @media screen and (min-width: 840px) {
-  .projects__page-link, .blog-page__read-more, .projects-page__view-project {
+  .projects__page-link, .blog-page__read-more {
     margin-top: 2rem;
   }
 }
@@ -314,6 +334,11 @@ ul {
   font-size: 4rem;
   margin-bottom: 30vh;
   font-weight: 300;
+}
+@media screen and (min-width: 840px) {
+  .projects-page__header, .blog-page__header, .contact-page__header {
+    font-size: 6.4rem;
+  }
 }
 .projects-page__projects, .contact-page, .blog-page {
   margin-top: 30vh;

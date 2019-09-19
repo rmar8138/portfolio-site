@@ -12,6 +12,15 @@
     font-size: $fs-large;
     font-weight: 300;
   }
+
+  @media screen and (min-width: $bp-medium) {
+    height: 30rem;
+    align-items: center;
+
+    & > * {
+      width: 50%;
+    }
+  }
 }
 
 .contact {
