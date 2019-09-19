@@ -9,6 +9,12 @@ $white: #ffffff;
 $red-accent: #fe5851;
 $blue-accent: #9acbec;
 
+// BREAKPOINTS
+
+$bp-medium: 640px;
+$bp-large: 840px;
+$bp-xlarge: 1300px;
+
 // FONT FAMILIES
 
 $primary-font: 'Lora', serif;
@@ -16,7 +22,8 @@ $secondary-font: 'Karla', sans-serif;
 
 // FONT SIZES
 
-$mobile-xsmall: 1.2rem;
-$mobile-small: 1.8rem;
-$mobile-medium: 2.4rem;
-$mobile-large: 4rem;
+$fs-xsmall: 1.2rem;
+$fs-small: 1.8rem;
+$fs-medium: 2.4rem;
+$fs-large: 4rem;
+$fs-xlarge: 6.4rem;

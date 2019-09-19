@@ -12,10 +12,18 @@
       <span class="nav__logo">Ragan Martinez</span>
       <button id="menuButton" class="button nav__menu-button">Menu</button>
       <ul class="nav__navlist">
-        <li class="nav__item">Home</li>
-        <li class="nav__item">Projects</li>
-        <li class="nav__item">Blog</li>
-        <li class="nav__item">Contact</li>
+        <li class="nav__item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="./projects.html">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="../blog/blog.html">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="../contact/contact.html">Contact</a>
+        </li>
       </ul>
     </nav>
     <div id="menu" class="menu">
@@ -44,23 +52,25 @@
               src="../img/project-4.jpg"
               alt="Project"
             />
-            <h1 class="project-page__title">PB Tracker</h1>
-            <h2 class="project-page__subtitle">
-              A CRUD app that leverages chart.js to display a user's personal
-              best gym lifts and saves to a Firebase database.
-            </h2>
+            <div class="project-page__heading">
+              <h1 class="project-page__title">PB Tracker</h1>
+              <h2 class="project-page__subtitle">
+                An application that allows users to track their personal best
+                gym lifts on a visual graph
+              </h2>
+              <a
+                class="project-page__github"
+                target="_blank"
+                href="https://github.com/rmar8138/ar-chive"
+              >
+                <img
+                  class="project-page__icon"
+                  src="https://img.icons8.com/material/24/000000/github.png"
+                />
+              </a>
+            </div>
           </div>
           <div class="project-page__details">
-            <a
-              class="project-page__github"
-              target="_blank"
-              href="https://github.com/rmar8138/pb-tracker"
-            >
-              <img
-                class="project-page__icon"
-                src="https://img.icons8.com/material/24/000000/github.png"
-              />
-            </a>
             <div class="project-page__tech">
               <h3 class="project-page__tech-header">Tech</h3>
               <ul class="project-page__tech-list">
@@ -70,12 +80,21 @@
                 <li class="project-page__tech-item">Firebase</li>
               </ul>
             </div>
-            <p class="project-page__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-              hic dignissimos a, quaerat iusto ad quae sed asperiores alias
-              laboriosam!
-            </p>
-            <a class="project-page__back-link" href="./projects.html">Back</a>
+            <div class="project-page__text">
+              <p class="project-page__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam hic dignissimos a, quaerat iusto ad quae sed asperiores
+                alias laboriosam!
+              </p>
+              <p class="project-page__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+                sunt eos esse ratione. Odio sunt soluta ullam, quia iste
+                dignissimos! Accusantium magni repudiandae fugiat totam incidunt
+                in delectus sit ipsam quisquam, quod assumenda, laboriosam,
+                voluptates maiores nam nobis suscipit voluptate.
+              </p>
+              <a class="project-page__back-link" href="./projects.html">Back</a>
+            </div>
           </div>
         </div>
       </section>

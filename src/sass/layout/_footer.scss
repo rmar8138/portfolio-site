@@ -9,8 +9,17 @@
 
   &__logo a {
     color: $white;
-    font-size: $mobile-large;
+    font-size: $fs-large;
     font-weight: 300;
+  }
+
+  @media screen and (min-width: $bp-medium) {
+    height: 30rem;
+    align-items: center;
+
+    & > * {
+      width: 50%;
+    }
   }
 }
 
@@ -35,5 +44,5 @@
 }
 
 .copyright {
-  font-size: $mobile-small;
+  font-size: $fs-small;
 }

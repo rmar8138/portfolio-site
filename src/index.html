@@ -13,10 +13,18 @@
         <span class="nav__logo">Ragan Martinez</span>
         <button id="menuButton" class="button nav__menu-button">Menu</button>
         <ul class="nav__navlist">
-          <li class="nav__item">Home</li>
-          <li class="nav__item">Projects</li>
-          <li class="nav__item">Blog</li>
-          <li class="nav__item">Contact</li>
+          <li class="nav__item">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./projects/projects.html">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="./blog/blog.html">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="./contact/contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
       <div class="header__text">
@@ -44,8 +52,8 @@
         </ul>
       </div>
     </header>
-    <section class="about">
-      <div class="container">
+    <div class="container">
+      <section class="about">
         <div class="skills">
           <h3 class="skills__header">Skills</h3>
           <ul class="skills__list">
@@ -85,69 +93,84 @@
             <a href="./contact/contact.html">here</a>.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <section class="projects">
       <div class="container">
         <h3 class="projects__header">Projects</h3>
         <ul class="projects__list">
           <li class="projects__item">
-            <h4 class="projects__item__title">Flashcard Terminal App</h4>
-            <a href="./projects/flashcard-app.html">
+            <a
+              class="projects__item__link"
+              href="./projects/flashcard-app.html"
+            >
               <img
                 class="projects__item__image"
                 src="./img/project-1.jpg"
                 alt="Project"
               />
             </a>
-            <p class="projects__item__description">
-              A flashcard app built on Ruby that runs in the terminal. Users can
-              perform CRUD operations on cards and decks, and review decks for
-              study.
-            </p>
-            <a
-              class="projects-page__view-project"
-              href="./projects/flashcard-app.html"
-              >View Project</a
-            >
+            <div class="projects__item__text">
+              <h4 class="projects__item__title">Flashcard Terminal App</h4>
+              <p class="projects__item__description">
+                A flashcard app built on Ruby that runs in the terminal. Users
+                can perform CRUD operations on cards and decks, and review decks
+                for study.
+              </p>
+              <a
+                class="projects-page__view-project"
+                href="./projects/flashcard-app.html"
+                >View Project</a
+              >
+            </div>
           </li>
           <li class="projects__item">
-            <h4 class="projects__item__title">Archive Studio Website</h4>
-            <a href="./projects/archive-website.html">
+            <a
+              class="projects__item__link"
+              href="./projects/archive-website.html"
+            >
               <img
                 class="projects__item__image"
                 src="./img/project-2.jpg"
                 alt="Project"
               />
             </a>
-            <p class="projects__item__description">
-              Website built for ar-chive, a design studio based in Sydney. Built
-              on Gatsby.js using Styled Components and GraphQL.
-            </p>
-            <a
-              class="projects-page__view-project"
-              href="./projects/archive-website.html"
-              >View Project</a
-            >
+            <div class="projects__item__text">
+              <h4 class="projects__item__title">Archive Studio Website</h4>
+              <p class="projects__item__description">
+                Website built for ar-chive, a design studio based in Sydney.
+                Built on Gatsby.js using Styled Components and GraphQL.
+              </p>
+              <a
+                class="projects-page__view-project"
+                href="./projects/archive-website.html"
+                >View Project</a
+              >
+            </div>
           </li>
           <li class="projects__item">
-            <h4 class="projects__item__title">Hex Colour Memory Game</h4>
-            <a href="./projects/hex-memory-game.html">
+            <a
+              class="projects__item__link"
+              href="./projects/hex-memory-game.html"
+            >
               <img
                 class="projects__item__image"
                 src="./img/project-3.jpg"
                 alt="Project"
               />
             </a>
-            <p class="projects__item__description">
-              A simple memory game based on randomly generated hexadecimal
-              colour values. Built on HTML, CSS/Sass and JavaScript.
-            </p>
-            <a
-              class="projects-page__view-project"
-              href="./projects/hex-memory-game.html"
-              >View Project</a
-            >
+            <div class="projects__item__text">
+              <h4 class="projects__item__title">Hex Colour Memory Game</h4>
+              <p class="projects__item__description">
+                A simple memory game based on randomly generated hexadecimal
+                colour values. Built on HTML, CSS/Sass and JavaScript.
+              </p>
+              <a
+                class="projects__item__view-project"
+                href="./projects/hex-memory-game.html"
+                >View Project</a
+              >
+            </div>
           </li>
         </ul>
         <a class="projects__page-link" href="./projects/projects.html"

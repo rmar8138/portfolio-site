@@ -9,15 +9,28 @@
   padding: 2rem;
   z-index: 2;
 
+  &__menu-button {
+    @media screen and (min-width: $bp-medium) {
+      display: none;
+    }
+  }
+
   &__navlist {
     display: none;
-    // display: flex;
+
+    @media screen and (min-width: $bp-medium) {
+      display: flex;
+    }
   }
 
   &__item {
     &:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: 4rem;
     }
+  }
+
+  @media screen and (min-width: $bp-medium) {
+    padding: 2rem 10vw;
   }
 }
 
@@ -25,6 +38,10 @@
   color: $white;
 
   button {
+    color: $white;
+  }
+
+  a {
     color: $white;
   }
 }

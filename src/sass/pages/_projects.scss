@@ -1,9 +1,14 @@
 .projects-page {
   &__header {
     @extend .projects__header;
-    font-size: $mobile-large;
+    font-size: $fs-large;
     margin-bottom: 30vh;
     font-weight: 300;
+
+    @media screen and (min-width: $bp-large) {
+      font-size: $fs-xlarge;
+      margin-top: -10rem;
+    }
   }
 
   &__projects {
@@ -21,6 +26,6 @@
   }
 
   &__view-project {
-    @extend .projects__page-link;
+    @extend .projects__item__view-project;
   }
 }
