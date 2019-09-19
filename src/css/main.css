@@ -100,7 +100,7 @@ ul {
 }
 @media screen and (min-width: 640px) {
   .container {
-    padding: 14vw;
+    padding: 10vw;
   }
 }
 
@@ -208,6 +208,8 @@ ul {
 @media screen and (min-width: 640px) {
   .skills {
     width: 50%;
+    text-align: right;
+    margin-right: 2rem;
   }
 }
 
@@ -226,6 +228,7 @@ ul {
 @media screen and (min-width: 640px) {
   .bio {
     width: 50%;
+    margin-left: 2rem;
   }
 }
 
@@ -250,12 +253,25 @@ ul {
   font-weight: 300;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 840px) {
+  .projects__item__link {
+    display: inline-block;
+    width: 50%;
+    padding: 4rem;
+  }
+}
 .projects__item__image, .blog-page__item__image {
   width: 100vw;
 }
 @media screen and (min-width: 640px) {
   .projects__item__image, .blog-page__item__image {
     width: 100%;
+  }
+}
+@media screen and (min-width: 840px) {
+  .projects__item__text {
+    width: 50%;
+    padding: 4rem;
   }
 }
 .projects__item::after, .blog-page__item::after, .projects-page__item::after {
@@ -267,10 +283,31 @@ ul {
   background-color: #d1d1d1;
   height: 6rem;
 }
+@media screen and (min-width: 840px) {
+  .projects__item::after, .blog-page__item::after, .projects-page__item::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 840px) {
+  .projects__item:nth-child(odd) a, .blog-page__item:nth-child(odd) a, .projects-page__item:nth-child(odd) a {
+    order: 2;
+  }
+}
+@media screen and (min-width: 840px) {
+  .projects__item, .blog-page__item, .projects-page__item {
+    flex-direction: row;
+  }
+}
 .projects__page-link, .blog-page__read-more, .projects-page__view-project {
+  display: inline-block;
   color: #777;
   padding-bottom: 5px;
   border-bottom: 1px solid #777;
+}
+@media screen and (min-width: 840px) {
+  .projects__page-link, .blog-page__read-more, .projects-page__view-project {
+    margin-top: 2rem;
+  }
 }
 
 .projects-page__header, .blog-page__header, .contact-page__header {
