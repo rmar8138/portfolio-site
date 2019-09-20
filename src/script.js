@@ -38,6 +38,7 @@ function toggleMenu() {
         easing: 'linear',
         duration: 500,
       });
+      menu.classList.toggle('white');
     } else {
       const bodyFadeIn = anime({
         targets: 'body',
@@ -46,13 +47,6 @@ function toggleMenu() {
         duration: 500,
       });
     }
-
-    // const bodyFadeOut = anime({
-    //   targets: 'body',
-    //   backgroundColor: 'rgb(17,17,17)',
-    //   easing: 'linear',
-    //   duration: 450,
-    // });
 
     const imageFadeOut = anime({
       targets: 'img',
@@ -77,17 +71,18 @@ function toggleMenu() {
     });
 
     if (navbar.dataset.page === 'project') {
+      // Inverts navbar colours in time with slide up animation
       setTimeout(function() {
         if (invert) {
           navbar.classList.toggle('invert');
         }
-      }, 450);
+      }, 550);
     } else {
       setTimeout(function() {
         if (invert) {
           navbar.classList.toggle('invert');
         }
-      }, 100);
+      }, 150);
     }
 
     // disable clicks until animation completes
@@ -111,6 +106,9 @@ function toggleMenu() {
         easing: 'linear',
         duration: 500,
       });
+      setTimeout(function() {
+        menu.classList.toggle('white');
+      }, 500);
     } else {
       const bodyFadeIn = anime({
         targets: 'body',
@@ -135,16 +133,17 @@ function toggleMenu() {
     });
 
     if (invert) {
+      // Inverts navbar colours in time with slide up animation
       setTimeout(function() {
         navbar.classList.toggle('invert');
-      }, 100);
+      }, 150);
     }
 
     // disable clicks until animation completes
     setTimeout(function() {
       menu.classList.toggle('visible');
       navbar.style.pointerEvents = 'auto';
-    }, 750);
+    }, 700);
   }
 
   // prevent scroll on body
@@ -160,10 +159,10 @@ function toggleMenu() {
 
   // change navbar color if not in footer
 
-  // add white class to navbar if in project page
-  if (navbar.dataset.page === 'project') {
-    menu.classList.toggle('white');
-  }
+  // if (navbar.dataset.page === 'project') {
+  //   // add white class to navbar if in project page
+  //   menu.classList.toggle('white');
+  // }
 }
 
 function detectFooterPosition(e) {
