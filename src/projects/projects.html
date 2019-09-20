@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Ragan Martinez | Projects</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="http://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
@@ -45,7 +48,9 @@
     </div>
     <section class="projects-page__projects">
       <div class="container">
-        <h1 class="projects-page__header">Projects</h1>
+        <h1 class="projects-page__header heading-fade-in load-hidden">
+          Projects
+        </h1>
         <ul class="projects__list">
           <li class="projects-page__item">
             <a class="projects__item__link" href="./flashcard-app.html">
@@ -56,16 +61,16 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title project-fade-in">
+              <h4 class="projects__item__title staggered-fade-in">
                 Flashcard Terminal App
               </h4>
-              <p class="projects__item__description project-fade-in">
+              <p class="projects__item__description staggered-fade-in">
                 A flashcard app built on Ruby that runs in the terminal. Users
                 can perform CRUD operations on cards and decks, and review decks
                 for study.
               </p>
               <a
-                class="projects-page__view-project project-fade-in"
+                class="projects-page__view-project staggered-fade-in"
                 href="./flashcard-app.html"
                 >View Project</a
               >
@@ -80,13 +85,15 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title">Archive Studio Website</h4>
-              <p class="projects__item__description">
+              <h4 class="projects__item__title staggered-fade-in">
+                Archive Studio Website
+              </h4>
+              <p class="projects__item__description staggered-fade-in">
                 Website built for ar-chive, a design studio based in Sydney.
                 Built on Gatsby.js using Styled Components and GraphQL.
               </p>
               <a
-                class="projects-page__view-project"
+                class="projects-page__view-project staggered-fade-in"
                 href="./archive-website.html"
                 >View Project</a
               >
@@ -101,13 +108,15 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title">Hex Colour Memory Game</h4>
-              <p class="projects__item__description">
+              <h4 class="projects__item__title staggered-fade-in">
+                Hex Colour Memory Game
+              </h4>
+              <p class="projects__item__description staggered-fade-in">
                 A simple memory game based on randomly generated hexadecimal
                 colour values. Built on HTML, CSS/Sass and JavaScript.
               </p>
               <a
-                class="projects-page__view-project"
+                class="projects-page__view-project staggered-fade-in"
                 href="./hex-memory-game.html"
                 >View Project</a
               >
@@ -122,13 +131,17 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title">PB Tracker</h4>
-              <p class="projects__item__description">
+              <h4 class="projects__item__title staggered-fade-in">
+                PB Tracker
+              </h4>
+              <p class="projects__item__description staggered-fade-in">
                 An application that allows users to input and track their
                 personal best gym lifts on a chart. Built on React/Redux,
                 Chart.js, Reactstrap and Firebase.
               </p>
-              <a class="projects-page__view-project" href="./pb-tracker.html"
+              <a
+                class="projects-page__view-project staggered-fade-in"
+                href="./pb-tracker.html"
                 >View Project</a
               >
             </div>
@@ -140,11 +153,11 @@
       <h4 class="footer__logo">
         <a href="../index.html">RM</a>
       </h4>
-      <div class="contact">
+      <div class="contact footer-fade-in">
         <h5>Email</h5>
         <a href="mailto:ragan.martinez@live.com">ragan.martinez@live.com</a>
       </div>
-      <ul class="social">
+      <ul class="social footer-fade-in">
         <li class="social__item">
           <a target="_blank" href="https://github.com/rmar8138">
             <img
@@ -170,7 +183,7 @@
           </a>
         </li>
       </ul>
-      <span class="copyright">Copyright &copy; 2019</span>
+      <span class="copyright footer-fade-in">Copyright &copy; 2019</span>
     </footer>
     <script src="../script.js"></script>
   </body>

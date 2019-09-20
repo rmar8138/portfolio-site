@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="http://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
 
     <title>Ragan Martinez | Home</title>
 
@@ -30,7 +31,7 @@
           </li>
         </ul>
       </nav>
-      <div class="header__text">
+      <div class="header__text load-hidden">
         <div class="container">
           <h1 class="header__heading">Ragan Martinez</h1>
           <h2 class="header__heading">Web Developer,</h2>
@@ -60,12 +61,12 @@
         <div class="skills">
           <h3 class="skills__header">Skills</h3>
           <ul class="skills__list">
-            <li class="skills__item">JavaScript</li>
-            <li class="skills__item">Ruby</li>
-            <li class="skills__item">HTML5</li>
-            <li class="skills__item">CSS3</li>
-            <li class="skills__item">React</li>
-            <li class="skills__item">Node.js</li>
+            <li class="skills__item staggered-fade-in">JavaScript</li>
+            <li class="skills__item staggered-fade-in">Ruby</li>
+            <li class="skills__item staggered-fade-in">HTML5</li>
+            <li class="skills__item staggered-fade-in">CSS3</li>
+            <li class="skills__item staggered-fade-in">React</li>
+            <li class="skills__item staggered-fade-in">Node.js</li>
           </ul>
         </div>
         <div class="bio">
@@ -116,16 +117,16 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title project-fade-in">
+              <h4 class="projects__item__title staggered-fade-in">
                 Flashcard Terminal App
               </h4>
-              <p class="projects__item__description project-fade-in">
+              <p class="projects__item__description staggered-fade-in">
                 A flashcard app built on Ruby that runs in the terminal. Users
                 can perform CRUD operations on cards and decks, and review decks
                 for study.
               </p>
               <a
-                class="projects-page__view-project project-fade-in"
+                class="projects-page__view-project staggered-fade-in"
                 href="./projects/flashcard-app.html"
                 >View Project</a
               >
@@ -143,15 +144,15 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title project-fade-in">
+              <h4 class="projects__item__title staggered-fade-in">
                 Archive Studio Website
               </h4>
-              <p class="projects__item__description project-fade-in">
+              <p class="projects__item__description staggered-fade-in">
                 Website built for ar-chive, a design studio based in Sydney.
                 Built on Gatsby.js using Styled Components and GraphQL.
               </p>
               <a
-                class="projects-page__view-project project-fade-in"
+                class="projects-page__view-project staggered-fade-in"
                 href="./projects/archive-website.html"
                 >View Project</a
               >
@@ -169,15 +170,15 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title project-fade-in">
+              <h4 class="projects__item__title staggered-fade-in">
                 Hex Colour Memory Game
               </h4>
-              <p class="projects__item__description project-fade-in">
+              <p class="projects__item__description staggered-fade-in">
                 A simple memory game based on randomly generated hexadecimal
                 colour values. Built on HTML, CSS/Sass and JavaScript.
               </p>
               <a
-                class="projects__item__view-project project-fade-in"
+                class="projects__item__view-project staggered-fade-in"
                 href="./projects/hex-memory-game.html"
                 >View Project</a
               >
@@ -193,11 +194,11 @@
       <h4 class="footer__logo">
         <a>RM</a>
       </h4>
-      <div class="contact footer-fade-in">
+      <div class="contact staggered-fade-in">
         <h5>Email</h5>
         <a href="mailto:ragan.martinez@live.com">ragan.martinez@live.com</a>
       </div>
-      <ul class="social footer-fade-in">
+      <ul class="social staggered-fade-in">
         <li class="social__item">
           <a target="_blank" href="https://github.com/rmar8138">
             <img
@@ -223,7 +224,7 @@
           </a>
         </li>
       </ul>
-      <span class="copyright footer-fade-in">Copyright &copy; 2019</span>
+      <span class="copyright staggered-fade-in">Copyright &copy; 2019</span>
     </footer>
     <script src="./script.js"></script>
   </body>
