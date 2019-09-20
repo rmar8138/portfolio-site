@@ -1,3 +1,13 @@
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .project-page {
   background-color: $black;
   color: $white;
@@ -29,6 +39,7 @@
     display: block;
     position: relative;
     width: 100vw;
+    animation: imageFadeIn 1.8s;
 
     @media screen and (min-width: $bp-medium) {
       max-width: 50%;
