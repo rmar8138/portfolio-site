@@ -1,3 +1,13 @@
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .project-page {
   background-color: $black;
   color: $white;
@@ -29,6 +39,7 @@
     display: block;
     position: relative;
     width: 100vw;
+    animation: imageFadeIn 1.8s;
 
     @media screen and (min-width: $bp-medium) {
       max-width: 50%;
@@ -38,6 +49,7 @@
   &__heading {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 
     & > * {
@@ -86,18 +98,9 @@
   &__github {
     display: inline-block;
     text-align: center;
-  }
-
-  &__icon {
-    @extend .social__icon;
-
-    @media screen and (min-width: $bp-large) {
-      width: 5rem;
-    }
-
-    @media screen and (min-width: $bp-large) {
-      width: 3vw;
-    }
+    color: $dark-grey;
+    border-bottom: 1px solid $dark-grey;
+    padding-bottom: 5px;
   }
 
   &__tech {

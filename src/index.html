@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="http://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+
     <title>Ragan Martinez | Home</title>
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -13,7 +17,7 @@
         <span class="nav__logo">Ragan Martinez</span>
         <button id="menuButton" class="button nav__menu-button">Menu</button>
         <ul class="nav__navlist">
-          <li class="nav__item">
+          <li class="nav__item--disabled">
             <a href="./index.html">Home</a>
           </li>
           <li class="nav__item">
@@ -27,18 +31,18 @@
           </li>
         </ul>
       </nav>
-      <div class="header__text">
+      <div class="header__text load-hidden">
         <div class="container">
-          <h1>Ragan Martinez</h1>
-          <h2>Web Developer,</h2>
-          <h2>Sydney Australia</h2>
+          <h1 class="header__heading">Ragan Martinez</h1>
+          <h2 class="header__heading">Web Developer,</h2>
+          <h2 class="header__heading">Sydney Australia</h2>
         </div>
       </div>
       <div id="menu" class="menu">
         <h3>Menu</h3>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link">Home</a>
+            <a class="menu__link--disabled">Home</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="./projects/projects.html">Projects</a>
@@ -57,41 +61,43 @@
         <div class="skills">
           <h3 class="skills__header">Skills</h3>
           <ul class="skills__list">
-            <li class="skills__item">JavaScript</li>
-            <li class="skills__item">Ruby</li>
-            <li class="skills__item">HTML5</li>
-            <li class="skills__item">CSS3</li>
-            <li class="skills__item">React</li>
-            <li class="skills__item">Node.js</li>
+            <li class="skills__item staggered-fade-in">JavaScript</li>
+            <li class="skills__item staggered-fade-in">Ruby</li>
+            <li class="skills__item staggered-fade-in">HTML5</li>
+            <li class="skills__item staggered-fade-in">CSS3</li>
+            <li class="skills__item staggered-fade-in">React</li>
+            <li class="skills__item staggered-fade-in">Node.js</li>
           </ul>
         </div>
         <div class="bio">
           <h3 class="bio__header">About</h3>
-          <p class="bio__text">
-            Hi! My name is Ragan, an aspiring web developer from Sydney
-            Australia, and currently enrolled in the Coder Academy Fast Track
-            bootcamp.
-          </p>
-          <p class="bio__text">
-            Ever since I picked up HTML and CSS from Codecademy in early 2018
-            I've developed a passion for web development and coding in general.
-            Since then I've been doing my best to learn as much as I can through
-            online courses, articles, building my own projects and the
-            occasional Stack Overflow search.
-          </p>
-          <p class="bio__text">
-            Being able to use logic and problem solving in endlessly creative
-            ways is what drew me to this field, and I hope to step foot in the
-            tech industry soon.
-          </p>
-          <p class="bio__text">
-            When I'm not stuck in my laptop, you can probably find me playing
-            sleepy guitar music, at a gig or playing pool with the boys.
-          </p>
-          <p class="bio__text">
-            View my resume <a href="#">here</a> or get in touch with me directly
-            <a href="./contact/contact.html">here</a>.
-          </p>
+          <div class="bio__all-text">
+            <p class="bio__text">
+              Hi! My name is Ragan, an aspiring web developer from Sydney
+              Australia, and currently enrolled in the Coder Academy Fast Track
+              bootcamp.
+            </p>
+            <p class="bio__text">
+              Ever since I picked up HTML and CSS from Codecademy in early 2018
+              I've developed a passion for web development and coding in
+              general. Since then I've been doing my best to learn as much as I
+              can through online courses, articles, building my own projects and
+              the occasional Stack Overflow search.
+            </p>
+            <p class="bio__text">
+              Being able to use logic and problem solving in endlessly creative
+              ways is what drew me to this field, and I hope to step foot in the
+              tech industry soon.
+            </p>
+            <p class="bio__text">
+              When I'm not stuck in my laptop, you can probably find me playing
+              sleepy guitar music, at a gig or playing pool with the boys.
+            </p>
+            <p class="bio__text">
+              View my resume <a href="#">here</a> or get in touch with me
+              directly <a href="./contact/contact.html">here</a>.
+            </p>
+          </div>
         </div>
       </section>
     </div>
@@ -111,14 +117,16 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title">Flashcard Terminal App</h4>
-              <p class="projects__item__description">
+              <h4 class="projects__item__title staggered-fade-in">
+                Flashcard Terminal App
+              </h4>
+              <p class="projects__item__description staggered-fade-in">
                 A flashcard app built on Ruby that runs in the terminal. Users
                 can perform CRUD operations on cards and decks, and review decks
                 for study.
               </p>
               <a
-                class="projects-page__view-project"
+                class="projects-page__view-project staggered-fade-in"
                 href="./projects/flashcard-app.html"
                 >View Project</a
               >
@@ -136,13 +144,15 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title">Archive Studio Website</h4>
-              <p class="projects__item__description">
+              <h4 class="projects__item__title staggered-fade-in">
+                Archive Studio Website
+              </h4>
+              <p class="projects__item__description staggered-fade-in">
                 Website built for ar-chive, a design studio based in Sydney.
                 Built on Gatsby.js using Styled Components and GraphQL.
               </p>
               <a
-                class="projects-page__view-project"
+                class="projects-page__view-project staggered-fade-in"
                 href="./projects/archive-website.html"
                 >View Project</a
               >
@@ -160,13 +170,15 @@
               />
             </a>
             <div class="projects__item__text">
-              <h4 class="projects__item__title">Hex Colour Memory Game</h4>
-              <p class="projects__item__description">
+              <h4 class="projects__item__title staggered-fade-in">
+                Hex Colour Memory Game
+              </h4>
+              <p class="projects__item__description staggered-fade-in">
                 A simple memory game based on randomly generated hexadecimal
                 colour values. Built on HTML, CSS/Sass and JavaScript.
               </p>
               <a
-                class="projects__item__view-project"
+                class="projects__item__view-project staggered-fade-in"
                 href="./projects/hex-memory-game.html"
                 >View Project</a
               >
@@ -182,11 +194,11 @@
       <h4 class="footer__logo">
         <a>RM</a>
       </h4>
-      <div class="contact">
+      <div class="contact staggered-fade-in">
         <h5>Email</h5>
         <a href="mailto:ragan.martinez@live.com">ragan.martinez@live.com</a>
       </div>
-      <ul class="social">
+      <ul class="social staggered-fade-in">
         <li class="social__item">
           <a target="_blank" href="https://github.com/rmar8138">
             <img
@@ -212,7 +224,7 @@
           </a>
         </li>
       </ul>
-      <span class="copyright">Copyright &copy; 2019</span>
+      <span class="copyright staggered-fade-in">Copyright &copy; 2019</span>
     </footer>
     <script src="./script.js"></script>
   </body>

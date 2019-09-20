@@ -24,8 +24,25 @@
   }
 
   &__item {
+    a {
+      transition: all 0.2s ease-out;
+    }
+
+    a:hover {
+      color: $dark-grey;
+    }
+
     &:not(:last-child) {
       margin-right: 4rem;
+    }
+
+    &--disabled {
+      @extend .nav__item;
+
+      a {
+        color: $dark-grey;
+        pointer-events: none;
+      }
     }
   }
 
