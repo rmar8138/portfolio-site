@@ -84,10 +84,14 @@ img {
   color: #777;
   font-weight: 300;
 }
-.menu__link {
+.menu__link, .menu__link--disabled {
   font-size: 4rem;
   line-height: 1.4;
   color: #ffffff;
+}
+.menu__link--disabled {
+  color: #777;
+  pointer-events: none;
 }
 
 .visible {
@@ -571,6 +575,11 @@ img {
 }
 .contact-page__social > *:not(:last-child) {
   margin-right: 2rem;
+}
+
+.disabled-link {
+  font-size: 4rem;
+  color: #777;
 }
 
 /*# sourceMappingURL=main.css.map */

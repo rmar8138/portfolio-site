@@ -20,6 +20,12 @@
     font-size: $fs-large;
     line-height: 1.4;
     color: $white;
+
+    &--disabled {
+      @extend .menu__link;
+      color: $dark-grey;
+      pointer-events: none;
+    }
   }
 }
 
