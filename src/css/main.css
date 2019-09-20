@@ -200,6 +200,12 @@ img {
     display: flex;
   }
 }
+.nav__item a, .nav__item--disabled a {
+  transition: all 0.2s ease-out;
+}
+.nav__item a:hover, .nav__item--disabled a:hover {
+  color: #777;
+}
 .nav__item:not(:last-child), .nav__item--disabled:not(:last-child) {
   margin-right: 4rem;
 }
