@@ -4,6 +4,10 @@ const menu = document.getElementById('menu');
 const menuButton = document.getElementById('menuButton');
 
 const skillsList = document.querySelectorAll('.skills__item');
+const techItem = document.querySelectorAll('.project-page__tech-item');
+const projectTitle = document.querySelectorAll('.project-page__title');
+const projectSubtitle = document.querySelectorAll('.project-page__subtitle');
+const projectText = document.querySelectorAll('.project-page__text');
 const navLogo = document.querySelectorAll('.nav__logo');
 const headings = document.querySelectorAll('.header__heading');
 const navItems = document.querySelectorAll('.nav__item');
@@ -18,10 +22,6 @@ const staggeredFadeIn = document.querySelectorAll('.staggered-fade-in');
 
 let invert = true;
 let toggle = false;
-
-// if (navbar.dataset.page === 'project') {
-//   document.body.classList.toggle('dark');
-// }
 
 function toggleMenu() {
   toggle = !toggle;
@@ -211,6 +211,31 @@ ScrollReveal().reveal(headings, {
 
 ScrollReveal().reveal(bioText, {
   delay,
+  distance: '20px',
+  origin: 'bottom',
+  easing: 'ease-out',
+});
+
+ScrollReveal().reveal(techItem, {
+  interval: delay,
+  distance: '20px',
+  origin: 'bottom',
+  easing: 'ease-out',
+});
+
+ScrollReveal().reveal(projectTitle, {
+  distance: '20px',
+  origin: 'bottom',
+  easing: 'ease-out',
+});
+
+ScrollReveal().reveal(projectSubtitle, {
+  distance: '20px',
+  origin: 'bottom',
+  easing: 'ease-out',
+});
+
+ScrollReveal().reveal(projectText, {
   distance: '20px',
   origin: 'bottom',
   easing: 'ease-out',

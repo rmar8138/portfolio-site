@@ -87,18 +87,9 @@
   &__github {
     display: inline-block;
     text-align: center;
-  }
-
-  &__icon {
-    @extend .social__icon;
-
-    @media screen and (min-width: $bp-large) {
-      width: 5rem;
-    }
-
-    @media screen and (min-width: $bp-large) {
-      width: 3vw;
-    }
+    color: $dark-grey;
+    border-bottom: 1px solid $dark-grey;
+    padding-bottom: 5px;
   }
 
   &__tech {
