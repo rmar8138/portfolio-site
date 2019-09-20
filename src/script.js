@@ -136,7 +136,7 @@ function toggleMenu() {
       // Inverts navbar colours in time with slide up animation
       setTimeout(function() {
         navbar.classList.toggle('invert');
-      }, 50);
+      }, 150);
     }
 
     // disable clicks until animation completes
