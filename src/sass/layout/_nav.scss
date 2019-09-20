@@ -28,6 +28,15 @@
     &:not(:last-child) {
       margin-right: 4rem;
     }
+
+    &--disabled {
+      @extend .nav__item;
+
+      a {
+        color: $dark-grey;
+        pointer-events: none;
+      }
+    }
   }
 
   @media screen and (min-width: $bp-medium) {
