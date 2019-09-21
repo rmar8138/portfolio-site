@@ -545,11 +545,6 @@ img::selection {
 .blog-page__item:last-child::after {
   display: none;
 }
-.blog-page h1::selection, .blog-page h2::selection, .blog-page h3::selection, .blog-page h4::selection, .blog-page h5::selection, .blog-page h6::selection, .blog-page p::selection, .blog-page li::selection, .blog-page a::selection, .blog-page span::selection, .blog-page img::selection {
-  background-color: #ffffff;
-  color: #111;
-}
-
 .blog-post-page__main {
   padding-top: 10vh;
 }
