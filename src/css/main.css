@@ -53,6 +53,21 @@ img {
   filter: brightness(1);
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+li::selection,
+a::selection,
+span::selection,
+img::selection {
+  background-color: #111;
+  color: #ffffff;
+}
+
 .button, .nav__menu-button {
   color: #111;
   font-size: 1.8rem;
@@ -144,6 +159,10 @@ img {
     width: 50%;
   }
 }
+.footer h1::selection, .project-page__footer h1::selection, .footer h2::selection, .project-page__footer h2::selection, .footer h3::selection, .project-page__footer h3::selection, .footer h4::selection, .project-page__footer h4::selection, .footer h5::selection, .project-page__footer h5::selection, .footer h6::selection, .project-page__footer h6::selection, .footer p::selection, .project-page__footer p::selection, .footer li::selection, .project-page__footer li::selection, .footer a::selection, .project-page__footer a::selection, .footer span::selection, .project-page__footer span::selection, .footer img::selection, .project-page__footer img::selection {
+  background-color: #ffffff;
+  color: #111;
+}
 
 .contact h5 {
   font-weight: 300;
@@ -227,6 +246,11 @@ img {
 }
 .invert a {
   color: #ffffff;
+}
+
+.nav.invert a::selection {
+  background-color: #ffffff;
+  color: #111;
 }
 
 .about {
@@ -513,10 +537,19 @@ img {
 .project-page__copyright {
   font-size: 1.2rem;
 }
+.project-page h1::selection, .blog-post-page h1::selection, .project-page h2::selection, .blog-post-page h2::selection, .project-page h3::selection, .blog-post-page h3::selection, .project-page h4::selection, .blog-post-page h4::selection, .project-page h5::selection, .blog-post-page h5::selection, .project-page h6::selection, .blog-post-page h6::selection, .project-page p::selection, .blog-post-page p::selection, .project-page li::selection, .blog-post-page li::selection, .project-page a::selection, .blog-post-page a::selection, .project-page span::selection, .blog-post-page span::selection, .project-page img::selection, .blog-post-page img::selection {
+  background-color: #ffffff;
+  color: #111;
+}
 
 .blog-page__item:last-child::after {
   display: none;
 }
+.blog-page h1::selection, .blog-page h2::selection, .blog-page h3::selection, .blog-page h4::selection, .blog-page h5::selection, .blog-page h6::selection, .blog-page p::selection, .blog-page li::selection, .blog-page a::selection, .blog-page span::selection, .blog-page img::selection {
+  background-color: #ffffff;
+  color: #111;
+}
+
 .blog-post-page__main {
   padding-top: 10vh;
 }

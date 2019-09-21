@@ -62,3 +62,9 @@
     color: $white;
   }
 }
+
+// TEXT HIGHLIGHTING FOR INVERTED NAV
+.nav.invert a::selection {
+  background-color: $white;
+  color: $black;
+}
