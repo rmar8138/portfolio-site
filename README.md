@@ -45,6 +45,20 @@ The desktop version of the site has a standard navbar fixed to the top of the pa
 
 Animations are handled by custom JavaScript and third party modules. ScrollReveal.js is used to handle animation when elements appear in the DOM (scrolling down and having headings fade in), and anime.js is being used for the bulk of the dropdown menu animation. Custom JavaScript is also used to toggle classes to facilitate the dropdown menu functionality, as well as inverting the navbar colours when scrolling down to the dark mobile footer.
 
+### Different Versions
+
+In accordance with the marking guidelines, two variations of the website have been made and pushed on separate branches. To see these, run either command in the root of the project:
+
+```
+$ git checkout version-2
+```
+
+or:
+
+```
+$ git checkout version-3
+```
+
 ## Sitemap
 
 A link to the sitemap can be found [here](/docs/portfolio-site-sitemap.pdf).
