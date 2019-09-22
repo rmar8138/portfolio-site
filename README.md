@@ -2,7 +2,7 @@
 
 ## Links
 
-- Portfolio Website: raganmartinez.netlify.com
+- Portfolio Website: https://raganmartinez.netlify.com
 - GitHub Repository: https://github.com/rmar8138/portfolio-site
 
 ## Purpose
