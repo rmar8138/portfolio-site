@@ -18,7 +18,7 @@ html.sr .load-hidden {
 body {
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
-  color: #111;
+  color: #9acbec;
   line-height: 1.6;
 }
 
@@ -42,7 +42,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #111;
+  color: #9acbec;
 }
 
 ul {
@@ -64,12 +64,12 @@ li::selection,
 a::selection,
 span::selection,
 img::selection {
-  background-color: #111;
+  background-color: #9acbec;
   color: #ffffff;
 }
 
 .button, .nav__menu-button {
-  color: #111;
+  color: #9acbec;
   font-size: 1.8rem;
   font-family: "Karla", sans-serif;
   border: none;
@@ -86,7 +86,7 @@ img::selection {
 .menu, .white {
   padding: 160px 80px;
   display: none;
-  background-color: #111;
+  background-color: #9acbec;
   position: fixed;
   top: 0;
   left: 0;
@@ -96,7 +96,7 @@ img::selection {
   z-index: 1;
 }
 .menu h3, .white h3 {
-  color: #777;
+  color: #97b8ce;
   font-weight: 300;
 }
 .menu__link, .menu__link--disabled {
@@ -105,7 +105,7 @@ img::selection {
   color: #ffffff;
 }
 .menu__link--disabled {
-  color: #777;
+  color: #97b8ce;
   pointer-events: none;
 }
 
@@ -116,10 +116,10 @@ img::selection {
 
 .white {
   background-color: #ffffff;
-  color: #111;
+  color: #9acbec;
 }
 .white a {
-  color: #111;
+  color: #9acbec;
 }
 
 .container {
@@ -137,7 +137,7 @@ img::selection {
 }
 
 .footer, .project-page__footer {
-  background-color: #111;
+  background-color: #9acbec;
   color: #ffffff;
   height: 100vh;
   text-align: center;
@@ -161,12 +161,12 @@ img::selection {
 }
 .footer h1::selection, .project-page__footer h1::selection, .footer h2::selection, .project-page__footer h2::selection, .footer h3::selection, .project-page__footer h3::selection, .footer h4::selection, .project-page__footer h4::selection, .footer h5::selection, .project-page__footer h5::selection, .footer h6::selection, .project-page__footer h6::selection, .footer p::selection, .project-page__footer p::selection, .footer li::selection, .project-page__footer li::selection, .footer a::selection, .project-page__footer a::selection, .footer span::selection, .project-page__footer span::selection, .footer img::selection, .project-page__footer img::selection {
   background-color: #ffffff;
-  color: #111;
+  color: #9acbec;
 }
 
 .contact h5 {
   font-weight: 300;
-  color: #777;
+  color: #97b8ce;
 }
 .contact a {
   color: #ffffff;
@@ -183,7 +183,7 @@ img::selection {
 
 .copyright {
   font-size: 1.8rem;
-  color: #777;
+  color: #97b8ce;
 }
 
 .header {
@@ -223,13 +223,13 @@ img::selection {
   transition: all 0.2s ease-out;
 }
 .nav__item a:hover, .nav__item--disabled a:hover {
-  color: #777;
+  color: #97b8ce;
 }
 .nav__item:not(:last-child), .nav__item--disabled:not(:last-child) {
   margin-right: 4rem;
 }
 .nav__item--disabled a {
-  color: #777;
+  color: #97b8ce;
   pointer-events: none;
 }
 @media screen and (min-width: 640px) {
@@ -250,7 +250,7 @@ img::selection {
 
 .nav.invert a::selection {
   background-color: #ffffff;
-  color: #111;
+  color: #9acbec;
 }
 
 .about {
@@ -281,16 +281,16 @@ img::selection {
 }
 
 .bio a {
-  color: #777;
-  border-bottom: 1px solid #777;
+  color: #97b8ce;
+  border-bottom: 1px solid #97b8ce;
 }
 .bio__all-text > *:not(:last-child) {
   margin-bottom: 2rem;
 }
 .bio__resume {
-  color: #777;
+  color: #97b8ce;
   padding-bottom: 5px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #97b8ce;
 }
 @media screen and (min-width: 640px) {
   .bio {
@@ -343,9 +343,9 @@ img::selection {
 }
 .projects__item__view-project, .blog-page__read-more, .projects-page__view-project, .projects__page-link {
   display: inline-block;
-  color: #777;
+  color: #97b8ce;
   padding-bottom: 5px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #97b8ce;
   margin-top: 2rem;
 }
 .projects__item::after, .blog-page__item::after, .projects-page__item::after {
@@ -405,7 +405,7 @@ img::selection {
   }
 }
 .project-page, .blog-post-page {
-  background-color: #111;
+  background-color: #9acbec;
   color: #ffffff;
 }
 .project-page__project, .blog-post-page__post {
@@ -491,8 +491,8 @@ img::selection {
 .project-page__github {
   display: inline-block;
   text-align: center;
-  color: #777;
-  border-bottom: 1px solid #777;
+  color: #97b8ce;
+  border-bottom: 1px solid #97b8ce;
   padding-bottom: 5px;
 }
 .project-page__tech {
@@ -507,7 +507,7 @@ img::selection {
   }
 }
 .project-page__tech-header {
-  color: #777;
+  color: #97b8ce;
 }
 @media screen and (min-width: 840px) {
   .project-page__text {
@@ -516,11 +516,11 @@ img::selection {
   }
 }
 .project-page__back-link, .blog-post-page__back-link {
-  color: #777;
+  color: #97b8ce;
   display: inline-block;
   text-align: center;
   padding-bottom: 5px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #97b8ce;
   margin: 2rem 0;
 }
 .project-page__footer {
@@ -539,7 +539,7 @@ img::selection {
 }
 .project-page h1::selection, .blog-post-page h1::selection, .project-page h2::selection, .blog-post-page h2::selection, .project-page h3::selection, .blog-post-page h3::selection, .project-page h4::selection, .blog-post-page h4::selection, .project-page h5::selection, .blog-post-page h5::selection, .project-page h6::selection, .blog-post-page h6::selection, .project-page p::selection, .blog-post-page p::selection, .project-page li::selection, .blog-post-page li::selection, .project-page a::selection, .blog-post-page a::selection, .project-page span::selection, .blog-post-page span::selection, .project-page img::selection, .blog-post-page img::selection {
   background-color: #ffffff;
-  color: #111;
+  color: #9acbec;
 }
 
 .blog-page__item:last-child::after {
@@ -602,7 +602,7 @@ img::selection {
 }
 .contact-page .email {
   display: inline-block;
-  color: #111;
+  color: #9acbec;
   font-size: 2.4rem;
   margin-bottom: 4rem;
 }
@@ -617,7 +617,7 @@ img::selection {
 
 .disabled-link {
   font-size: 4rem;
-  color: #777;
+  color: #97b8ce;
 }
 
 /*# sourceMappingURL=main.css.map */
