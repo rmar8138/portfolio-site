@@ -61,7 +61,7 @@ $ git checkout version-3
 
 ## Sitemap
 
-A link to the sitemap can be found [here](/docs/portfolio-site-sitemap.pdf).
+![Sitemap](/docs/portfolio-site-sitemap.png).
 
 ## Screenshots
 

@@ -18,9 +18,8 @@ html {
 
 body {
   font-size: $fs-small;
-  font-family: $secondary-font;
+  font-family: $primary-font;
   color: $black;
-  // background-color: $white;
   line-height: 1.6;
 }
 
@@ -30,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   line-height: 1.2;
 }
 

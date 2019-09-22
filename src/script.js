@@ -2,7 +2,6 @@ const navbar = document.getElementById('nav');
 const footer = document.getElementById('footer');
 const menu = document.getElementById('menu');
 const menuButton = document.getElementById('menuButton');
-
 const skillsList = document.querySelectorAll('.skills__item');
 const techItem = document.querySelectorAll('.project-page__tech-item');
 const projectTitle = document.querySelectorAll('.project-page__title');
@@ -13,11 +12,9 @@ const headings = document.querySelectorAll('.header__heading');
 const navItems = document.querySelectorAll('.nav__item');
 const menuItems = document.querySelectorAll('.menu__link');
 const bioText = document.querySelectorAll('.bio__all-text');
-
 const headingFadeIn = document.querySelectorAll('.heading-fade-in');
 const projectTextFadeIn = document.querySelectorAll('.project-fade-in');
 const footerFadeIn = document.querySelectorAll('.footer-fade-in');
-
 const staggeredFadeIn = document.querySelectorAll('.staggered-fade-in');
 
 let invert = true;
@@ -156,13 +153,6 @@ function toggleMenu() {
     menuButton.textContent = 'Menu';
     ScrollReveal().clean(menuItems);
   }
-
-  // change navbar color if not in footer
-
-  // if (navbar.dataset.page === 'project') {
-  //   // add white class to navbar if in project page
-  //   menu.classList.toggle('white');
-  // }
 }
 
 function detectFooterPosition(e) {
